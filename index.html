@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>tic-tac-toe</title>
+    <link rel="shortcut icon" type="image/png" href="css/images/tic-tac-toe-favi.webp">
+</head>
+
+<body>
+    <dialog open class="fade-in">
+        <form action="#">
+            <h2>Let’s Get Started — Enter Player Names</h2>
+            <div class="player-entry-wrapper">
+                <label for="playerOneName">Player One Name:</label>
+                <input id="playerOneName" type="text" placeholder="Player One Name" required>
+            </div>
+            <div class="player-entry-wrapper">
+                <label for="playerTwoName">Player Two Name:</label>
+                <input id="playerTwoName" type="text" placeholder="Player Two Name" required>
+            </div>
+            <button type="submit" id="startGameBtn">Start Game</button>
+        </form>
+    </dialog>
+    <header>
+        <div class="x-o-wrapper">
+            <div class="x-offset">×</div>
+            <div>o</div>
+        </div>
+        <button id="resetGame" type="button">Reset Game</button>
+    </header>
+    <main>
+        <h1>tic-tac-toe</h1>
+        <div class="winner-message">
+            <h2 id="winner-header">Player Wins</h2>
+            <button id="newGameBtn" type="button">New Game</button>
+        </div>
+        <div id="gameBoardContainer">
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+            <div class="gameBoardCell"></div>
+        </div>
+        <div class="player-result-wrapper">
+            <div class="player-one-wrapper">
+                <div id="playerOneHeading" class="result-heading">Player One's Total Wins</div>
+                <div id="playerOneWins" class="result-subheading">0</div>
+            </div>
+            <div class="player-two-wrapper">
+                <div id="playerTwoHeading" class="result-heading">Player Two's Total Wins</div>
+                <div id="playerTwoWins" class="result-subheading">0</div>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
